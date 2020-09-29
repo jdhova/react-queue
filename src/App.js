@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Queue from './components/Queue';
 
 const App = () => {
   return (
     <div className='App'>
-      <h3>we work here and all starts at app.js now </h3>
+      <Queue />
     </div>
   );
 };

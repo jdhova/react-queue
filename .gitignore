@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+1. Create Input field State
+Handle change and Handle SUBMIT make it work and it fires 
+
+2. Create the speific algorithm and test with the input field
+
+
