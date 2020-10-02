@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 
 const Queue = () => {
-  const [input, setInput] = useState([]);
+  const [input, setInput] = useState('');
+  const [final, setFinal] = useState('');
 
   const onChange = (info) => (e) => {
     setInput({ input: e.target.value });
   };
 
-  //   const onChange = (name) => (e) => {
-  //     setValues({
-  //       ...values,
-  //       [name]: e.target.value,
-  //     });
-  //   };
+  onsubmit = (e) => {
+    console.log(input, '1');
+    e.preventDefault();
+    setInput({ ...input });
+    console.log(input, '2');
+    // setFinal({ final: input });
+    // setFinal({ final: input });
+  };
 
   return (
     <div>
@@ -27,6 +30,9 @@ const Queue = () => {
         <br />
         <br />
         <input type='submit' value='Submit' />
+        {/* <h3>{input}</h3> */}
+        <h3>{JSON.stringify(input)} </h3>
+        {/* <h3>{JSON.stringify(final)} </h3> */}
       </form>
     </div>
 
