@@ -13,7 +13,7 @@ const Queue = () => {
     e.preventDefault();
     setInput({ ...input });
     console.log(input, '2');
-    // setFinal({ final: input });
+    
     // setFinal({ final: input });
   };
 
